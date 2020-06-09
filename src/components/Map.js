@@ -1,9 +1,11 @@
 import React from 'react';
+import './styles/Trail.css';
 
 function Map() {
     return (
-      <div className="map">
-        <p>This is the Map.</p>
+      <div className="map-wrapper">
+        <br/><br /><br />
+        <p>This is the Map</p>
       </div>
     );
   }
