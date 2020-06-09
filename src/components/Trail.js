@@ -5,18 +5,27 @@ import './styles/Trail.css';
 
 function Trail() {
 
-    const [pageNumber, setpageNumber] = useState(1);
+    const [pageNumber, setPageNumber] = useState(1);
+    const [storyActive, setStoryActive] = useState(false);
 
     function nextPage(){
-      setpageNumber(pageNumber + 1)
+      setPageNumber(pageNumber + 1)
     }
 
     function previousPage(){
-      setpageNumber(pageNumber - 1)
+      setPageNumber(pageNumber - 1)
     }
 
     return (
       <div className="trail-wrapper">
+        <div className="story-map-wrapper">
+          <div className="story-map-tab">
+            <h1>Story</h1>
+          </div>
+          <div className="story-map-tab">
+            <h1>Map</h1>
+          </div>
+        </div>
         <Story pageNumber={pageNumber} nextPage={nextPage} previousPage={previousPage} />
         <Map pageNumber={pageNumber} />
       </div>
