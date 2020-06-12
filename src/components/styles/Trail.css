@@ -1,5 +1,25 @@
+/* Setting up control of which layout to display: */
 
-/*    DESKTOP LAYOUT    */
+@media screen and (max-width: 768px) {
+    .mobile-only{
+        display: flex;
+    }
+
+    .large-only{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .large-only{
+        display: flex;
+    }
+
+    .mobile-only{
+        display: none;
+    }
+}
+
 
 .trail-wrapper{
     padding: 20px;
@@ -35,53 +55,4 @@
 
 .selected{
     background-color: #a4c3a4 !important;
-}
-
-
-/*   MOBILE LAYOUT   */
-
-@media screen and (max-width: 768px) {
-
-    .trail-wrapper{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 20px 0 20px 0;
-        padding: 0;
-    }
-
-    .story-wrapper{
-        width: 90%;
-        border: 2px solid #273E47;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .map-wrapper{
-        width: 90%;
-        flex-grow: 1;
-        margin: 0 auto;
-        padding: 0;
-        border: 2px solid grey;
-        background-color: lightsteelblue;
-    }
-
-    .story-map-wrapper{
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        border: 2px solid grey;
-    }
-
-    .story-map-tab{
-        width: 50%;
-        margin: 10px;
-        border: 1px solid grey;
-        border-radius: 15px;
-        padding: 10px 0px 10px 0px;
-        text-align: center;
-        background-color: #CCE3DE;
-    }
-
 }

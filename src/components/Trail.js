@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Story from './Story';
 import Map from './Map';
+import MobileLayout from './MobileLayout';
 import './styles/Trail.css';
 
 function Trail() {
@@ -17,18 +18,17 @@ function Trail() {
     }
 
     return (
-      <div className="trail-wrapper">
-        <div className="story-map-wrapper">
-          <div className="story-map-tab">
-            <h1>Story</h1>
-          </div>
-          <div className="story-map-tab">
-            <h1>Map</h1>
+      <>
+        <div className="mobile-only">
+          <MobileLayout pageNumber={pageNumber} nextPage={nextPage} previousPage={previousPage} />
+        </div>
+        <div className="large-only">
+          <div className="trail-wrapper">
+            <Story pageNumber={pageNumber} nextPage={nextPage} previousPage={previousPage} />
+            <Map pageNumber={pageNumber} />
           </div>
         </div>
-        <Story pageNumber={pageNumber} nextPage={nextPage} previousPage={previousPage} />
-        <Map pageNumber={pageNumber} />
-      </div>
+      </>
     );
   }
 
