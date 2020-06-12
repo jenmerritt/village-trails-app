@@ -10,8 +10,9 @@ function Map() {
     useEffect(
       () => {
         // lazy load the required ArcGIS API for JavaScript modules and CSS
-        loadModules(['esri/Map', 'esri/views/MapView'], { css: true })
-        .then(([ArcGISMap, MapView]) => {
+        loadModules(['esri/Map', 'esri/views/MapView', 'esri/widgets/BasemapToggle'], { css: true })
+        .then(([ArcGISMap, MapView, BasemapToggle]) => {
+
           const map = new ArcGISMap({
             basemap: 'topo-vector'
           });
@@ -24,12 +25,20 @@ function Map() {
             zoom: 17
           });
 
+          var basemapToggle = new BasemapToggle({
+            view: view,
+            nextBasemap: "satellite"
+          });
+
+          view.ui.add(basemapToggle, "bottom-right");
+
           return () => {
             if (view) {
               // destroy the map view
               view.container = null;
             }
           };
+
         });
       }
     );
