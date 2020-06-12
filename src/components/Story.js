@@ -99,13 +99,13 @@ function Story({pageNumber, nextPage, previousPage}) {
 
         { pageNumber != 1 ?
           <div id="previous" className="text-content">
-            <p onClick={() => previousPage()}>Previous</p>
+            <p onClick={() => previousPage()} className="link">Previous</p>
           </div>
         : null }
 
         { pageNumber != 10 ?
           <div id="next" className="text-content">
-            <p onClick={() => nextPage()}>Next</p>
+            <p onClick={() => nextPage()} className="link">Next</p>
           </div>
         : null }
         </div>

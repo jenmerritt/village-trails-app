@@ -25,7 +25,7 @@
     padding: 20px;
     display: flex;
     flex-direction: row;
-    min-height: 800px;
+    min-height: 650px;
 }
 
 .story-wrapper{
@@ -41,7 +41,7 @@
 .map-wrapper{
     flex-grow: 2;
     border: 1px solid grey;
-    background-color: lightsteelblue;
+    /* background-color: lightsteelblue; */
     text-align: center;
 }
 
@@ -55,4 +55,9 @@
 
 .selected{
     background-color: #a4c3a4 !important;
+}
+
+.link:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }

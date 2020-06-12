@@ -23,11 +23,10 @@
 
     .map-wrapper{
         width: 90%;
-        flex-grow: 1;
         margin: 0 auto;
         padding: 0;
         border: 2px solid grey;
-        background-color: lightsteelblue;
+        min-height: 700px;
     }
 
     .story-map-wrapper{
