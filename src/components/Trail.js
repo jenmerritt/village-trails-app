@@ -7,7 +7,6 @@ import './styles/Trail.css';
 function Trail() {
 
     const [pageNumber, setPageNumber] = useState(1);
-    const [storyActive, setStoryActive] = useState(false);
 
     function nextPage(){
       setPageNumber(pageNumber + 1)
@@ -17,19 +16,23 @@ function Trail() {
       setPageNumber(pageNumber - 1)
     }
 
+    function updatePageNumberFromMap(number){
+      setPageNumber(number);
+    }
+
     return (
       <>
         <div className="mobile-only">
-          <MobileLayout pageNumber={pageNumber} nextPage={nextPage} previousPage={previousPage} />
+          <MobileLayout pageNumber={pageNumber} nextPage={nextPage} previousPage={previousPage} updatePageNumberFromMap={updatePageNumberFromMap} />
         </div>
         <div className="large-only">
           <div className="trail-wrapper">
             <Story pageNumber={pageNumber} nextPage={nextPage} previousPage={previousPage} />
-            <Map pageNumber={pageNumber} />
+            <Map pageNumber={pageNumber} updatePageNumberFromMap={updatePageNumberFromMap}/>
           </div>
         </div>
       </>
     );
-  }
+}
 
 export default Trail;

@@ -2,6 +2,10 @@
 
 @media screen and (max-width: 768px) {
 
+    h2{
+        margin: 0 !important;
+    }
+
     .mobile-wrapper{
         display: flex;
         flex-direction: column;
@@ -23,10 +27,12 @@
 
     .map-wrapper{
         width: 90%;
+        flex-grow: 1;
         margin: 0 auto;
         padding: 0;
         border: 2px solid grey;
-        min-height: 700px;
+        background-color: lightsteelblue;
+        min-height: 500px;
     }
 
     .story-map-wrapper{
@@ -42,7 +48,7 @@
         margin: 10px;
         border: 1px solid grey;
         border-radius: 15px;
-        padding: 10px 0px 10px 0px;
+        /* padding: 10px 0px 10px 0px; */
         text-align: center;
         background-color: #CCE3DE;
     }
