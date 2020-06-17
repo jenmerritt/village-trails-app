@@ -19,6 +19,7 @@
         border: 2px solid #273E47;
         margin: 0 auto;
         padding: 0;
+        height: 600px;
     }
 
     .text-content{
@@ -31,8 +32,7 @@
         margin: 0 auto;
         padding: 0;
         border: 2px solid grey;
-        background-color: lightsteelblue;
-        min-height: 500px;
+        height: 600px;
     }
 
     .story-map-wrapper{

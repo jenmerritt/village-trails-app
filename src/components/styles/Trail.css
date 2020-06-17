@@ -25,17 +25,18 @@
     padding: 20px;
     display: flex;
     flex-direction: row;
-    min-height: 800px;
+    max-height: 700px;
 }
 
 .story-wrapper{
     /* max-width: 75%; */
-    width: 50%;
+    width: 30%;
     /* min-width: 25%; */
     border: 2px solid #273E47;
     padding: 50px 20px 20px 20px;
     /* resize: horizontal;
     overflow: auto; */
+    overflow: scroll;
 }
 
 .map-wrapper{
