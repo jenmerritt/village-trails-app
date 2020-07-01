@@ -14,15 +14,21 @@ function Trail() {
         <div className="mobile-only">
           <MobileLayout />
         </div>
+        <div className="show-hide-story">
+        {showStory ? 
+              <div className="show-hide-story-button" onClick={() => setShowStory(false)}><h3>Hide Story</h3></div>
+            :     
+              <div className="show-hide-story-button" onClick={() => setShowStory(true)}><h3>Show Story</h3></div>
+        }
+        </div>
           <div className="large-only">
             <div className="trail-wrapper">
               { showStory ? 
                 <>
-                  <p onClick={() => setShowStory(false)}>Hide Story</p>
                   <Story />
                 </>
                 :
-                <p onClick={() => setShowStory(true)}>Show Story</p> }
+                null }
               <Map reloadMap={reloadMap} />
             </div>
           </div>

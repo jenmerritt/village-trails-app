@@ -22,7 +22,7 @@
 
 
 .trail-wrapper{
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     display: flex;
     flex-direction: row;
     height: 700px;
@@ -62,4 +62,26 @@
 .link:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+
+.show-hide-story{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.show-hide-story-button{
+    padding: 5px;
+    margin: 5px 0 5px 20px;
+    background-color: #6B9080;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.show-hide-story-button h3{
+    padding: 0px;
+    margin: 0px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
 }
