@@ -37,3 +37,21 @@ h3{
 .bold{
     font-weight: bold;
 }
+
+a:visited{
+    color:#6B9080;
+}
+
+/* section{
+    border: 1px solid #6B9080;
+    margin-bottom: 10px;
+    padding: 15px;
+} */
+
+section{
+    padding: 5px;
+}
+
+.to-top{
+    margin-left:20px;
+}

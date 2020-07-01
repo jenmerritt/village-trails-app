@@ -10,11 +10,11 @@ function Story() {
     return (
       <div className="story-wrapper">
             <div className="text-content">
-              <h2>Crayke Village Trail</h2>
+              <a id="top"><h2>Crayke Village Trail</h2></a>
               <hr className="divider" />
               { showIntro ?
               <>
-                <a id="top"><h3 className="cursor-effect" onClick={() => setShowIntro(false)}>Introduction<img className="arrow-image" src="../up-arrow.png" /></h3></a>
+                <h3 className="cursor-effect" onClick={() => setShowIntro(false)}>Introduction<img className="arrow-image" src="../up-arrow.png" /></h3>
                   <section>
                     <p>Crayke (the name possibly comes from the Saxon word ‘Creca’, meaning crag or rock) has a long history, with archaeological evidence showing occupation since Neolithic times. It seems to have been a key staging point on an ancient trackway going north – south. </p>
                     <p>There is strong evidence of a Saxon settlement, possibly a monastery, on the hill. Indeed records show that in 685 Crayke and the land three miles around it was given to Cuthbert, Bishop of Lindisfarne, as a resting place on journeys to York. Thus started Crayke’s long association with Durham. Local finds include a polished stone axe head, dated to 3000BC, Roman pottery – possibly associated with Crayke’s use as an inland signal station built as part of the Saxon Shore defences in the 4th century, a 7th century pendant, a fragment of a 9th century stone cross and a curious hastily constructed burial pit containing one female and fifteen male skeletons. Are they monks, plague victims or maybe victims of William the Conqueror’s Harrying of the North?</p> 
@@ -102,7 +102,7 @@ function Story() {
                 <p>This concludes your trail. There is a pleasant viewpoint over the Vale of York a little further up the road on the left, complete with a bench. If you are in need of refreshments, there is The Durham Ox in the village for great pub food, or The Dutch House on the Brandsby Road about a mile outside the village. It offers delicious food, an art gallery, a delightful garden and a plant nursery.</p>
               </section>
             </div>
-            <a href="#top"><p>Back to top</p></a>
+            <a href="#top"><p className="to-top">Back to top</p></a>
       </div>
     );
   }
