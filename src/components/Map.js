@@ -3,22 +3,19 @@ import { loadModules } from 'esri-loader';
 import './styles/Trail.css';
 import './styles/Map.css';
 
-function Map() {
+function Map({reloadMap}) {
 
   const mapRef = useRef();
 
     useEffect(
       () => {
-        // lazy load the required ArcGIS API for JavaScript modules and CSS
         loadModules(['esri/Map', 'esri/views/MapView', 'esri/widgets/BasemapToggle', 'esri/layers/GraphicsLayer', 'esri/Graphic', 'esri/layers/FeatureLayer'], { css: true })
         .then(([ArcGISMap, MapView, BasemapToggle, GraphicsLayer, Graphic, FeatureLayer]) => {
 
           const map = new ArcGISMap({
             basemap: 'osm'
-            // basemap: 'streets-navigation-vector'
           });
 
-          // load the map view at the ref's DOM node
           const view = new MapView({
             container: mapRef.current,
             map: map,
@@ -29,7 +26,6 @@ function Map() {
           const basemapToggle = new BasemapToggle({
             view: view,
             nextBasemap: "satellite"
-            // nextBasemap: "topo-vector"
           });
 
           view.ui.add(basemapToggle, "bottom-right");
@@ -37,33 +33,40 @@ function Map() {
           var graphicsLayer = new GraphicsLayer();
           map.add(graphicsLayer);
 
-          // var setPageAction = {
-          //   title: "Set Page",
-          //   id: "set-page"
-          // }
-          
-          var popupTemp = {
-            "title": "{TITLE}",
-            "content": "{CONTENT}"
-            // "actions": [setPageAction]
-          }
+          /////////////
+////////////// Attempting to write custom action for PopupTemplate:
+          /////////////
 
-    
-          var pointsOfInterest = new FeatureLayer({
-            url: "https://services.arcgis.com/bMgojlbrTl9MfMgx/arcgis/rest/services/crayke_history_trail/FeatureServer",
-            outFields: ["TITLE", "CONTENT", "NUMBER"],
-            popupTemplate: popupTemp
-          });
-    
-          map.add(pointsOfInterest);
+          // var goToNextAction = {
+          //   title: "Next",
+          //   id: "next",
+          //   // action: view.popup.next,
+          //   className: "esri-icon-next"
+          // };
 
           // view.popup.on("trigger-action", function(event){
-          //   if(event.action.id === "set-page"){
-          //     updatePageNumberFromMap(3);
+          //   if(event.action.id === "next"){
+          //     console.log(view.popup.selectedFeature)
+          //     console.log(view.popup.selectedFeatureIndex)
+          //     console.log(view.popup.next)
+          //     console.log(view.popup.selectedFeature.attributes.ObjectId)
+          //     view.popup.next()
           //   }
-          // })
-
-          return () => {
+          // }); 
+              
+          var pointsOfInterest = new FeatureLayer({
+            url: "https://services.arcgis.com/bMgojlbrTl9MfMgx/arcgis/rest/services/crayke_history_trail/FeatureServer",
+            outFields: ["OBJECTID", "TITLE", "CONTENT", "NUMBER"],
+            popupTemplate: {
+              title: "{TITLE}",
+              content: "{CONTENT}"
+              // actions: [goToNextAction]
+            }
+          });
+    
+          map.add(pointsOfInterest);  
+          
+           return () => {
             if (view) {
               // destroy the map view
               view.container = null;
@@ -71,7 +74,7 @@ function Map() {
           };
 
         })
-      }
+      }, [reloadMap]
     );
 
     return (
@@ -83,4 +86,3 @@ function Map() {
 }
 
 export default Map;
-

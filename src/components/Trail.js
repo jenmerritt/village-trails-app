@@ -6,31 +6,26 @@ import './styles/Trail.css';
 
 function Trail() {
 
-    // const [pageNumber, setPageNumber] = useState(1);
-
-    // function nextPage(){
-    //   setPageNumber(pageNumber + 1)
-    // }
-
-    // function previousPage(){
-    //   setPageNumber(pageNumber - 1)
-    // }
-
-    // function updatePageNumberFromMap(number){
-    //   setPageNumber(number);
-    // }
+    const [showStory, setShowStory] = useState(true);
+    const [reloadMap, setReloadMap] = useState(false);
 
     return (
       <>
         <div className="mobile-only">
           <MobileLayout />
         </div>
-        <div className="large-only">
-          <div className="trail-wrapper">
-            <Story />
-            <Map />
+          <div className="large-only">
+            <div className="trail-wrapper">
+              { showStory ? 
+                <>
+                  <p onClick={() => setShowStory(false)}>Hide Story</p>
+                  <Story />
+                </>
+                :
+                <p onClick={() => setShowStory(true)}>Show Story</p> }
+              <Map reloadMap={reloadMap} />
+            </div>
           </div>
-        </div>
       </>
     );
 }

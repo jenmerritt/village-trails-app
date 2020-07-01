@@ -25,7 +25,8 @@
     padding: 20px;
     display: flex;
     flex-direction: row;
-    max-height: 700px;
+    height: 700px;
+    width: 100%;
 }
 
 .story-wrapper{

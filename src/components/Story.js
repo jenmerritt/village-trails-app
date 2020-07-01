@@ -7,15 +7,6 @@ function Story() {
 
     return (
       <div className="story-wrapper">
-        {/* { pageNumber == 1 ?
-            <div id="intro" className="text-content">
-              <h2>Welcome to the Crayke Village Trail</h2>
-              <p>Crayke (the name possibly comes from the Saxon word ‘Creca’, meaning crag or rock) has a long history, with archaeological evidence showing occupation since Neolithic times. It seems to have been a key staging point on an ancient trackway going north – south. </p>
-              <p>There is strong evidence of a Saxon settlement, possibly a monastery, on the hill. Indeed records show that in 685 Crayke and the land three miles around it was given to Cuthbert, Bishop of Lindisfarne, as a resting place on journeys to York. Thus started Crayke’s long association with Durham. Local finds include a polished stone axe head, dated to 3000BC, Roman pottery – possibly associated with Crayke’s use as an inland signal station built as part of the Saxon Shore defences in the 4th century, a 7th century pendant, a fragment of a 9th century stone cross and a curious hastily constructed burial pit containing one female and fifteen male skeletons. Are they monks, plague victims or maybe victims of William the Conqueror’s Harrying of the North?</p> 
-              <p>The Domesday Book (1086) shows Crayke’s value had halved since the time of Edward the Confessor, almost certainly the result of William’s actions.</p>
-              <p>For more information on Crayke History visit our website: www.craykehistory.uk</p>
-            </div>
-        : null } */}
             <div className="text-content">
               <h2>Welcome to the Crayke Village Trail</h2>
               <p>Crayke (the name possibly comes from the Saxon word ‘Creca’, meaning crag or rock) has a long history, with archaeological evidence showing occupation since Neolithic times. It seems to have been a key staging point on an ancient trackway going north – south. </p>
@@ -43,22 +34,8 @@ function Story() {
               <p>This concludes your trail. There is a pleasant viewpoint over the Vale of York a little further up the road on the left, complete with a bench. If you are in need of refreshments, there is The Durham Ox in the village for great pub food, or The Dutch House on the Brandsby Road about a mile outside the village. It offers delicious food, an art gallery, a delightful garden and a plant nursery.</p>
             </div>
 
-        {/* <hr className="divider" />
+        {/* <hr className="divider" /> */}
 
-        <div id="story-buttons">
-
-        { pageNumber != 1 ?
-          <div id="previous" className="text-content">
-            <p onClick={() => previousPage()} className="link">Previous</p>
-          </div>
-        : null }
-
-        { pageNumber != 10 ?
-          <div id="next" className="text-content">
-            <p onClick={() => nextPage()} className="link">Next</p>
-          </div>
-        : null }
-        </div> */}
       </div>
     );
   }

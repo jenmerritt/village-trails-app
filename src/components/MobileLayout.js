@@ -3,9 +3,9 @@ import Story from './Story';
 import Map from './Map';
 import './styles/MobileLayout.css';
 
-function MobileLayout({pageNumber, nextPage, previousPage, updatePageNumberFromMap}) {
+function MobileLayout() {
 
-    const [activeTab, setActiveTab] = useState(1);
+    const [activeTab, setActiveTab] = useState(2);
 
     return (
       <div className="mobile-wrapper">
@@ -18,10 +18,10 @@ function MobileLayout({pageNumber, nextPage, previousPage, updatePageNumberFromM
           </div>
         </div>
         { activeTab === 1 ? 
-        <Story pageNumber={pageNumber} nextPage={nextPage} previousPage={previousPage} />
+        <Story />
         : null }
         { activeTab === 2 ?
-        <Map pageNumber={pageNumber} updatePageNumberFromMap={updatePageNumberFromMap} />
+        <Map />
         : null }
       </div>
     );
