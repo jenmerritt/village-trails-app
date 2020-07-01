@@ -19,13 +19,13 @@ function Trail() {
         <div className="show-hide-story">
         {showStory ? 
         <>
-              <div className="show-hide-story-button" onClick={() => setShowStory(false)}><h3>Hide Story</h3></div>
-              <div className="show-hide-story-button" onClick={() => setDisplayHelp(!displayHelp)}><h3>Need help?</h3></div>
+              <div className="show-hide-story-button" onClick={() => setShowStory(false)}><p>Hide Text</p></div>
+              <div className="show-hide-story-button" onClick={() => setDisplayHelp(!displayHelp)}><p>Need help?</p></div>
         </>
             :     
         <>
-              <div className="show-hide-story-button" onClick={() => setShowStory(true)}><h3>Show Story</h3></div>
-              <div className="show-hide-story-button" onClick={() => setDisplayHelp(!displayHelp)}><h3>Need help?</h3></div>
+              <div className="show-hide-story-button" onClick={() => setShowStory(true)}><p>Show Text</p></div>
+              <div className="show-hide-story-button" onClick={() => setDisplayHelp(!displayHelp)}><p>Need help?</p></div>
         </>
         }
         </div>

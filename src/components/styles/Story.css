@@ -5,11 +5,35 @@ p {
 
 h2 {
     font-size: 32px;
-    margin-bottom: 20px !important;
+    margin-bottom: 15px !important;
     color: #6B9080;
+    text-align: center;
+}
+
+h3{
+    color: #6B9080;
+    font-style: italic;
 }
 
 .divider{
     border: 3px solid #A4C3B2;
-    margin: 35px 0px 35px 0px;
+    margin: 5px 0px 15px 0px;
+}
+
+.arrow-image{
+    width: 20px;
+    margin-left: 15px;
+}
+
+.cursor-effect:hover{
+    cursor: pointer;
+}
+
+.marker{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.bold{
+    font-weight: bold;
 }
