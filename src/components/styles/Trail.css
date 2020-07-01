@@ -34,10 +34,15 @@
     width: 30%;
     /* min-width: 25%; */
     border: 2px solid #273E47;
-    padding: 50px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     /* resize: horizontal;
     overflow: auto; */
     overflow: scroll;
+}
+
+.story-wrapper p{
+    font-family: 'Noto Serif', serif;
+    line-height: 2em;
 }
 
 .map-wrapper{
@@ -68,6 +73,8 @@
     width: 100%;
     padding: 0px;
     margin: 0px;
+    display: flex;
+    flex-direction: row;
 }
 
 .show-hide-story-button{

@@ -2,12 +2,14 @@ import React, {useState} from 'react';
 import Story from './Story';
 import Map from './Map';
 import MobileLayout from './MobileLayout';
+import HowTo from './HowTo';
 import './styles/Trail.css';
 
 function Trail() {
 
     const [showStory, setShowStory] = useState(true);
     const [reloadMap, setReloadMap] = useState(false);
+    const [displayHelp, setDisplayHelp] = useState(false);
 
     return (
       <>
@@ -16,11 +18,22 @@ function Trail() {
         </div>
         <div className="show-hide-story">
         {showStory ? 
+        <>
               <div className="show-hide-story-button" onClick={() => setShowStory(false)}><h3>Hide Story</h3></div>
+              <div className="show-hide-story-button" onClick={() => setDisplayHelp(!displayHelp)}><h3>Need help?</h3></div>
+        </>
             :     
+        <>
               <div className="show-hide-story-button" onClick={() => setShowStory(true)}><h3>Show Story</h3></div>
+              <div className="show-hide-story-button" onClick={() => setDisplayHelp(!displayHelp)}><h3>Need help?</h3></div>
+        </>
         }
         </div>
+        { displayHelp ? 
+          <HowTo setDisplayHelp={setDisplayHelp}/>
+          :
+          null
+        }
           <div className="large-only">
             <div className="trail-wrapper">
               { showStory ? 
