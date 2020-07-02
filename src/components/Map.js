@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useRef} from 'react';
 import { loadModules } from 'esri-loader';
 import './styles/Trail.css';
 import './styles/Map.css';

@@ -1,4 +1,26 @@
 .how-to-wrapper{
     padding: 20px;
     margin: 30px;
+    border: 5px solid #6B9080;
+}
+
+h4{
+    color: #6B9080;
+}
+
+h4:hover{
+    color: #6B9080;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a{
+    color: #6B9080 !important;
+    text-decoration: none !important;
+}
+
+a:hover{
+    color: #6B9080;
+    text-decoration: underline !important;
+    cursor: pointer;
 }

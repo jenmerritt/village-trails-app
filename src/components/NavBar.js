@@ -8,10 +8,10 @@ function NavBar() {
             <h1>Explore Crayke</h1>
         </div>
         <div className="nav-bar-center">
-            <img src="../header-image.png" id="header-image" />
+            <img src="../header-image.png" id="header-image" alt="village-icon" />
         </div>
         <div className="nav-bar-right">
-            <p><a href="#">Crayke History Website</a></p>
+            <p><a href="http://www.craykehistory.uk" target="_blank" rel="noopener noreferrer">Crayke History Website</a></p>
         </div>
       </div>
     );
