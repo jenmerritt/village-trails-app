@@ -33,7 +33,7 @@
     /* max-width: 75%; */
     width: 30%;
     /* min-width: 25%; */
-    border: 2px solid #273E47;
+    border: 1px solid #6B9080;
     padding: 20px 20px 20px 20px;
     /* resize: horizontal;
     overflow: auto; */
@@ -47,8 +47,6 @@
 
 .map-wrapper{
     flex-grow: 2;
-    border: 1px solid grey;
-    /* background-color: lightsteelblue; */
     text-align: center;
 }
 

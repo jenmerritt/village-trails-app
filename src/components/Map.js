@@ -58,7 +58,7 @@ function Map({reloadMap}) {
 ////////// Zoom out action
 
             var zoomOutAction = {
-            title: "",
+            title: " ",
             id: "zoom-out",
             className: "esri-icon-zoom-out-magnifying-glass"
           };
@@ -78,16 +78,16 @@ function Map({reloadMap}) {
             } if(event.action.id === "zoom-in"){
               view.goTo({
                 center: view.popup.selectedFeature,
-                zoom: view.zoom + 2
+                zoom: view.zoom + 5
               });
             }
-          }); 
+          });
               
           var pointsOfInterest = new FeatureLayer({
             url: "https://services.arcgis.com/bMgojlbrTl9MfMgx/arcgis/rest/services/crayke_history_trail/FeatureServer",
             outFields: ["OBJECTID", "TITLE", "CONTENT", "NUMBER"],
             popupTemplate: {
-              title: "{TITLE}",
+              title: "{NUMBER} : {TITLE}",
               content: "{CONTENT}",
               overwriteActions: true,
               actions: [zoomInAction, zoomOutAction]

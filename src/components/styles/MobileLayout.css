@@ -16,7 +16,7 @@
 
     .story-wrapper{
         width: 90%;
-        border: 2px solid #273E47;
+        border: 1px solid #6B9080;
         margin: 0 auto;
         padding: 0;
         height: 600px;
@@ -31,7 +31,7 @@
         flex-grow: 1;
         margin: 0 auto;
         padding: 0;
-        border: 2px solid grey;
+        border: 1px solid #6B9080;
         height: 600px;
     }
 
@@ -40,7 +40,7 @@
         margin: 0 auto;
         display: flex;
         flex-direction: row;
-        border: 2px solid grey;
+        border: 1px solid #6B9080;
     }
 
     .story-map-tab{
@@ -50,7 +50,19 @@
         border-radius: 15px;
         /* padding: 10px 0px 10px 0px; */
         text-align: center;
-        background-color: #CCE3DE;
+        background-color: #6B9080;
     }
+
+    .story-map-tab:hover{
+        cursor: pointer;
+        background-color: #6b9080c4;
+    }
+
+    .story-map-tab h2{
+        color: #ffffff;
+    }
+
+        color: #ffffff !important;
+
 
 }
