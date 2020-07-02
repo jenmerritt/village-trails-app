@@ -34,7 +34,7 @@ function Map({reloadMap}) {
           map.add(graphicsLayer);
 
           /////////////
-////////////// Attempting to write custom action for PopupTemplate:
+////////////// Attempting to write next/previous action for PopupTemplate:
           /////////////
 
           // var goToNextAction = {
@@ -53,14 +53,44 @@ function Map({reloadMap}) {
           //     view.popup.next()
           //   }
           // }); 
+
+
+////////// Zoom out action
+
+            var zoomOutAction = {
+            title: "",
+            id: "zoom-out",
+            className: "esri-icon-zoom-out-magnifying-glass"
+          };
+
+          var zoomInAction = {
+            title: "Zoom to",
+            id: "zoom-in",
+            className: "esri-icon-zoom-in-magnifying-glass"
+          };
+
+          view.popup.on("trigger-action", function(event){
+            if(event.action.id === "zoom-out"){
+              view.goTo({
+                center: view.popup.selectedFeature,
+                zoom: view.zoom - 2
+              });
+            } if(event.action.id === "zoom-in"){
+              view.goTo({
+                center: view.popup.selectedFeature,
+                zoom: view.zoom + 2
+              });
+            }
+          }); 
               
           var pointsOfInterest = new FeatureLayer({
             url: "https://services.arcgis.com/bMgojlbrTl9MfMgx/arcgis/rest/services/crayke_history_trail/FeatureServer",
             outFields: ["OBJECTID", "TITLE", "CONTENT", "NUMBER"],
             popupTemplate: {
               title: "{TITLE}",
-              content: "{CONTENT}"
-              // actions: [goToNextAction]
+              content: "{CONTENT}",
+              overwriteActions: true,
+              actions: [zoomInAction, zoomOutAction]
             }
           });
     
