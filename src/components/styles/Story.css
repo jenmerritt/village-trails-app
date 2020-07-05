@@ -10,6 +10,11 @@ h2 {
     text-align: center;
 }
 
+.no-dec-link:hover{
+    cursor: auto;
+    text-decoration: none !important;
+}
+
 a{
     color:#6B9080;
 }
@@ -24,9 +29,14 @@ h3{
     margin: 5px 0px 15px 0px;
 }
 
-.arrow-image{
-    width: 20px;
-    margin-left: 15px;
+.plus-sign-image{
+    width: 25px;
+    margin-top: 15px;
+}
+
+.minus-sign-image{
+    width: 40px;
+    margin-top: 5px;
 }
 
 .cursor-effect:hover{
@@ -58,4 +68,26 @@ section{
 
 .to-top{
     margin-left:20px;
+}
+
+.accordion-wrap{
+    display:flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.accordion-left{
+    width: 90%;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion-right{
+    width: 20%;
+    vertical-align: middle;
+}
+
+.accordion-wrap:hover{
+    cursor: pointer;
 }

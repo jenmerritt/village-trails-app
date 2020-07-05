@@ -10,11 +10,14 @@ function Story() {
     return (
       <div className="story-wrapper">
             <div className="text-content">
-              <a id="top"><h2>Crayke Village Trail</h2></a>
+              <a id="top" className="no-dec-link"><h2>Crayke Village Trail</h2></a>
               <hr className="divider" />
               { showIntro ?
               <>
-                <h3 className="cursor-effect" onClick={() => setShowIntro(false)}>Introduction<img className="arrow-image" src="../up-arrow.png"  alt="arrow-up" /></h3>
+                <div className="accordion-wrap"  onClick={() => setShowIntro(false)}>
+                  <div className="accordion-left"><h3 className="cursor-effect">Introduction</h3></div>
+                  <div className="accordion-right"><img className="minus-sign-image" src="../minus-sign.png"  alt="minus-sign" /></div>
+                </div>
                   <section>
                     <p>Crayke (the name possibly comes from the Saxon word ‘Creca’, meaning crag or rock) has a long history, with archaeological evidence showing occupation since Neolithic times. It seems to have been a key staging point on an ancient trackway going north – south. </p>
                     <p>There is strong evidence of a Saxon settlement, possibly a monastery, on the hill. Indeed records show that in 685 Crayke and the land three miles around it was given to Cuthbert, Bishop of Lindisfarne, as a resting place on journeys to York. Thus started Crayke’s long association with Durham. Local finds include a polished stone axe head, dated to 3000BC, Roman pottery – possibly associated with Crayke’s use as an inland signal station built as part of the Saxon Shore defences in the 4th century, a 7th century pendant, a fragment of a 9th century stone cross and a curious hastily constructed burial pit containing one female and fifteen male skeletons. Are they monks, plague victims or maybe victims of William the Conqueror’s Harrying of the North?</p> 
@@ -22,7 +25,13 @@ function Story() {
                     <p>For more information on Crayke History visit our website: <a href="http://www.craykehistory.uk" target="_blank" rel="noopener noreferrer">www.craykehistory.uk</a></p>
                   </section>
               </>
-              : <><h3 className="cursor-effect" onClick={() => setShowIntro(true)}>Introduction<img src="../down-arrow.png" className="arrow-image"  alt="arrow-down" /></h3></>
+              :
+              <div className="accordion-wrap" onClick={() => setShowIntro(true)}>
+                <div className="accordion-left">
+                  <h3 className="cursor-effect">Introduction</h3>
+                </div>
+                  <div className="accordion-right"><img className="plus-sign-image" src="../plus-sign.png"  alt="plus-sign" /></div>
+              </div>
               } 
               <hr className="divider" />
               <section>
