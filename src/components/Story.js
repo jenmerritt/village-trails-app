@@ -36,23 +36,23 @@ function Story() {
               <hr className="divider" />
               <section>
                 <h3><img alt="1" className="marker" src="../markers/1.png"/> The Old Rectory</h3>
-                <p>Start the trail at the top of the hill. On your left, as the road bends to the south stands <span className="bold">The Old Rectory</span>, much altered in 1803-5 by Rector Robert Gray, who began the addition of a third storey which had to be demolished in 1839, after high winds showed it had made the building very unstable.</p>
+                <p>Start the trail at the top of the hill. Go past the church and on your left, as the road bends to the south is <span className="bold">The Old Rectory</span>, much altered in 1803-5 by Rector Robert Gray, who began the addition of a third storey which had to be demolished in 1839, after high winds showed it had made the building very unstable.</p>
               </section>
               <section>
                 <h3><img alt="2" className="marker" src="../markers/2.png"/> Church Farm</h3>
-                <p>Turn back and keep going down the hill and on your right, set sideways to the road is <span className="bold">Church Farm</span>, once the village blacksmith’s forge.</p> 
+                <p>Turn back and go down the hill. On your right, set sideways to the road is <span className="bold">Church Farm</span>, once the village blacksmith’s forge.</p> 
               </section>
               <section>
                 <h3><img alt="3" className="marker" src="../markers/3.png"/> Crayke Cottage</h3>
-                <p>Further down stands the incongruously named <span className="bold">Crayke Cottage</span>, thought to have been built in 1852 as the curate’s house and the birthplace of William Ralph Inge, who became Dean of St Paul’s Cathedral in London 1811-34.</p>
+                <p>Further down stands the modestly named <span className="bold">Crayke Cottage</span>, thought to have been built in 1852 as the curate’s house and the birthplace of William Ralph Inge, who was Dean of St Paul’s Cathedral in London from 1911-34.</p>
               </section>
               <section>
                 <h3><img alt="4" className="marker" src="../markers/4.png"/> Churton Hall</h3>
-                <p>Turn right at the bottom of the hill and head down Westway. This street was known as School Street until relatively recently, as <span className="bold">Churton Hall</span> (on your right) was the original school house. Opened in 1846 It was erected at the expense of the Reverend Edward Churton and other benefactors for the free education of boys, later enlarged to take girls. The rectors were hard taskmasters, records show a high turnover of schoolmasters in the 1870s with money, poor school attendance affecting standards and inability to play the organ being cited as problems. Part of the bell tower fell down in 1971, after being struck by lightning, and in 1972 a new school was built on the site of the old Village Institute. The old school, now a private house, became the village hall, named in memory of Edward Churton.</p>
+                <p>Turn right at the bottom of the hill and head down Westway. This street was known as School Street until relatively recently, as <span className="bold">Churton Hall</span> (on your right) was the original school house. Opened in 1846, it was erected at the expense of the Reverend Edward Churton and other benefactors for the free education of boys, later enlarged to take girls. The rectors were hard taskmasters, records show a high turnover of schoolmasters in the 1870s with money, poor school attendance, low standards and inability to play the organ being cited as problems. Part of the bell tower fell down in 1971, after being struck by lightning, and in 1972 a new school was built on the site of the old Village Institute. The old school, now a private house, became the village hall, named in memory of Edward Churton.</p>
               </section>
               <section>
                 <h3><img alt="5" className="marker" src="../markers/5.png"/> The Pinfold</h3>
-                <p>Head further down the hill and cross the road to Easingwold. Behind the hedge on the small green in front of you at the corner you will find <span className="bold">The Pinfold</span>, where stray farm animals were kept, having been rounded up. This was not the first pinfold in the village. It was built in 1852, after the Reverend Churton became exasperated by the noise the animals made when held in the original one beside the church. Farmers had to pay a fine to the person whose land they had strayed on to and to the pound keeper before the animals were released.</p>
+                <p>Head further down the hill and cross Easingwold road. Behind the hedge on the small green in front of you at the corner you will find <span className="bold">The Pinfold</span>, where straying farm animals were kept after being rounded up. This was not the first pinfold in the village. It was built in 1852, after the Reverend Churton became exasperated by the noise the animals made when held in the original one beside the church. Farmers had to pay a fine to both the person whose land they had strayed on to, and to the pound keeper before the animals were released.</p>
               </section>
               <section>
                 <h3><img alt="6" className="marker" src="../markers/6.png"/> Tudor Cottage</h3>
@@ -67,8 +67,8 @@ function Story() {
                 <p>Head up past <span className="bold">The Durham Ox</span>, onto Brandsby Street. The Durham Ox is over 300 years old and is named after the famous Shorthorn Ox of immense size and weight. It also references Crayke’s link to Durham, to which county it belonged until 1844. This status made the parish a favourite haunt for those poaching in the Forest of Galtres, as they could escape prosecution by York authorities. When Crayke had 3 or 4 public houses, names such as The Greyhound show no attempt to disguise poaching activities.</p>
               </section>
               <section>
-                <h3><img alt="9" className="marker" src="../markers/9.png"/> Ivy Farm</h3>
-                <p>Walk all the way down to the last house on Brandsby Street on your right (you will need to cross the road as there is no pavement). <span className="bold">This is Ivy Farm</span>, which was built in 1560. Go a few steps down the lane beside it to see its timber framing at the rear. Now go back across the road and head up into the village.</p>
+                <h3><img alt="9" className="marker" src="../markers/9.png"/> Ivy Farm House</h3>
+                <p>Walk all the way down to the last house on Brandsby Street on your right (you will need to cross the road as there is no pavement). <span className="bold">This is Ivy Farm House</span>, which was built in 1560 (although the plaque on the house dates from Stephen Cliff’s time). Go a few steps down the lane beside it to see its timber framing at the rear. Now go back across the road and head up into the village.</p>
               </section>
               <section>
                 <h3><img alt="10 and 11" className="marker" src="../markers/10.png"/><img className="marker" src="../markers/11.png"/> Rose Cottage and Priest Cottages</h3>
@@ -76,11 +76,11 @@ function Story() {
               </section>
               <section>
                 <h3><img alt="12" className="marker" src="../markers/12.png"/> The Old Bakery</h3>
-                <p>Go a little further and you come to <span className="bold">The Old Bakery</span>, originally belonging to Charles Hogg Builders. A long established business, it was responsible for key village works such as enlarging Crayke Manor in the 1890s for the Stephen Cliff, who had bought most of Crayke Estate and whose family still own it. The property then became Banks’ Bakery.</p>
+                <p>Go a little further and you come to <span className="bold">The Old Bakery</span>, originally belonging to Charles Hogg Builders. A long established business, it was responsible for key village works such as enlarging Crayke Manor in the 1890s for Stephen Cliff, who had bought most of Crayke Estate and whose family still own much of it. The property then became Banks’ Bakery.</p>
               </section>
               <section>
                 <h3><img alt="13" className="marker" src="../markers/13.png"/> Whistling Green</h3>
-                <p>Now head up Key Lane. This was originally known as Kiln Lane, a clue to early pottery works in the village. On your left you will see the original Methodist Chapel, now a house. It was replaced by the chapel on Church Hill. Turn left at the top and walk down to this chapel, now a house named <span className="bold">Whistling Green</span>. It dates from 1902.</p>
+                <p>Now head up Key Lane. This was originally known as Kiln Lane, a clue to early pottery works in the village. On your left you will see the original Methodist Chapel, now a house. It was replaced by the chapel on Church Hill. Turn left at the top and walk down to this chapel, now also a house named <span className="bold">Whistling Green</span>. It dates from 1902.</p>
               </section>
               <section>
                 <h3><img alt="14" className="marker" src="../markers/14.png"/> Village Green</h3>
@@ -100,7 +100,7 @@ function Story() {
               </section>
               <section>
                 <h3><img alt="18" className="marker" src="../markers/18.png"/> St Cuthbert's Church</h3>
-                <p>At the top of the hill stands <span className="bold">St Cuthbert’s Church</span>. Take a moment to sit on the bench to the right of the gate in the churchyard. On a good day, you can see the towers of York Minster to the south and further off the less edifying sight of several power stations. Cuthbert is said to have founded a monastery in Crayke around 685. Our church, dating from 1436, could be on the site of the earlier monastic church where Cuthbert’s bones were kept for four months in the face of Viking attacks on Lindisfarne and the north coast in 883. His body was said to be in tact 200 years after his death in 687. If you enjoyed the view south then you might want to take a quick detour down Love Lane, the entrance to which is via a couple of steps out of the churchyard to the east. As you head down the lane you will pass a wild garden on your left. This was the site of the burial pit mentioned in the introduction. Just through the gate at the end of the lane you can sit and enjoy the view towards the White Horse of Kilburn, near Sutton Bank.</p>
+                <p>At the top of the hill stands <span className="bold">St Cuthbert’s Church</span>. Take a moment to sit on the bench to the right of the gate in the churchyard. On a good day, you can see the towers of York Minster to the south and further off the less edifying sight of several power stations. Cuthbert is said to have founded a monastery in Crayke around 685. Our church, dating from 1436, could be on the site of the earlier monastic church where Cuthbert’s remains were kept for four months in the face of Viking attacks on Lindisfarne and the north coast in 883. His body was said to be intact 200 years after his death in 687. If you enjoyed the view south then you might want to take a quick detour down Love Lane, the entrance to which is via a couple of steps out of the churchyard to the east. As you head down the lane you will pass a wild garden on your left. This was the site of the burial pit mentioned in the introduction. Just through the gate at the end of the lane you can sit and enjoy the view towards the White Horse of Kilburn, near Sutton Bank.</p>
               </section>
               <section>
                 <h3><img alt="19" className="marker" src="../markers/19.png"/> Crayke Castle</h3>
