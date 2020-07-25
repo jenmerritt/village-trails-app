@@ -33,28 +33,6 @@ function Map({reloadMap}) {
           var graphicsLayer = new GraphicsLayer();
           map.add(graphicsLayer);
 
-          /////////////
-////////////// Attempting to write next/previous action for PopupTemplate:
-          /////////////
-
-          // var goToNextAction = {
-          //   title: "Next",
-          //   id: "next",
-          //   // action: view.popup.next,
-          //   className: "esri-icon-next"
-          // };
-
-          // view.popup.on("trigger-action", function(event){
-          //   if(event.action.id === "next"){
-          //     console.log(view.popup.selectedFeature)
-          //     console.log(view.popup.selectedFeatureIndex)
-          //     console.log(view.popup.next)
-          //     console.log(view.popup.selectedFeature.attributes.ObjectId)
-          //     view.popup.next()
-          //   }
-          // }); 
-
-
 ////////// Zoom out action
 
             var zoomOutAction = {
@@ -85,10 +63,10 @@ function Map({reloadMap}) {
               
           var pointsOfInterest = new FeatureLayer({
             url: "https://services.arcgis.com/bMgojlbrTl9MfMgx/arcgis/rest/services/crayke_history_trail/FeatureServer",
-            outFields: ["OBJECTID", "TITLE", "CONTENT", "NUMBER"],
+            outFields: ["OBJECTID", "TITLE", "CONTENT", "NUMBER", "IMAGE"],
             popupTemplate: {
               title: "{NUMBER} : {TITLE}",
-              content: "{CONTENT}",
+              content: `{CONTENT} <p></p><a href="{IMAGE}" target="_blank" rel="noopener noreferrer" ><img src="{IMAGE}" /></a><p>Click image to view full size (opens in new tab)</p>`,
               overwriteActions: true,
               actions: [zoomInAction, zoomOutAction]
             }

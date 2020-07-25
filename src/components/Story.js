@@ -37,6 +37,8 @@ function Story() {
               <section>
                 <h3><img alt="1" className="marker" src="../markers/1.png"/> The Old Rectory</h3>
                 <p>Start the trail at the top of the hill. Go past the church and on your left, as the road bends to the south is <span className="bold">The Old Rectory</span>, much altered in 1803-5 by Rector Robert Gray, who began the addition of a third storey which had to be demolished in 1839, after high winds showed it had made the building very unstable.</p>
+                <a href="https://craykehistory.files.wordpress.com/2019/11/cropped-img_6034-copy-2.jpg" target="_blank" rel="noopener noreferrer" ><img src="https://craykehistory.files.wordpress.com/2019/11/cropped-img_6034-copy-2.jpg" className="story-image" /></a>
+                <p className="image-caption">Click image to view full size (opens in new tab)</p>
               </section>
               <section>
                 <h3><img alt="2" className="marker" src="../markers/2.png"/> Church Farm</h3>

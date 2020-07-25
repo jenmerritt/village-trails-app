@@ -91,3 +91,11 @@ section{
 .accordion-wrap:hover{
     cursor: pointer;
 }
+
+.story-image{
+    max-width: 300px;
+}
+
+.image-caption{
+    font-size: 10px;
+}
