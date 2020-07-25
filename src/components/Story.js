@@ -37,8 +37,6 @@ function Story() {
               <section>
                 <h3><img alt="1" className="marker" src="../markers/1.png"/> The Old Rectory</h3>
                 <p>Start the trail at the top of the hill. Go past the church and on your left, as the road bends to the south is <span className="bold">The Old Rectory</span>, much altered in 1803-5 by Rector Robert Gray, who began the addition of a third storey which had to be demolished in 1839, after high winds showed it had made the building very unstable.</p>
-                <a href="https://craykehistory.files.wordpress.com/2019/11/cropped-img_6034-copy-2.jpg" target="_blank" rel="noopener noreferrer" ><img src="https://craykehistory.files.wordpress.com/2019/11/cropped-img_6034-copy-2.jpg" className="story-image" /></a>
-                <p className="image-caption">Click image to view full size (opens in new tab)</p>
               </section>
               <section>
                 <h3><img alt="2" className="marker" src="../markers/2.png"/> Church Farm</h3>
@@ -62,7 +60,7 @@ function Story() {
               </section>
               <section>
                 <h3><img alt="7" className="marker" src="../markers/7.png"/> The Homestead</h3>
-                <p>Further up, outside <span className="bold">The Homestead</span>, you will also see by the steps to the house some staddle stones, these were traditional rodent proof footings for grain stores. It was built in 1872 by William Bayston, hence WB on the gable.</p>
+                <p>Further up, outside <span className="bold">The Homestead</span>, you will also see by the steps to the house some staddle stones, these were traditional rodent proof footings for grain stores. It was built in 1782 by William Bayston, hence WB on the gable.</p>
               </section>
               <section>
                 <h3><img alt="8" className="marker" src="../markers/8.png"/> The Durham Ox</h3>
@@ -87,6 +85,8 @@ function Story() {
               <section>
                 <h3><img alt="14" className="marker" src="../markers/14.png"/> Village Green</h3>
                 <p>Looking back up the hill, you will see the <span className="bold">Village Green</span>, where bonfires were held to celebrate key events including Queen Victoria’s Golden Jubilee. Picture postcards survive of children sledging down the hill in the snow.</p>
+                <a href="https://craykehistory.files.wordpress.com/2019/10/imgp9208.jpg" target="_blank" rel="noopener noreferrer" ><img src="https://craykehistory.files.wordpress.com/2019/10/imgp9208.jpg" className="story-image" /></a>
+                <p className="image-caption">Click image to view full size (opens in new tab)</p>
               </section>
               <section>
                 <h3><img alt="15" className="marker" src="../markers/15.png"/> The Well</h3>
@@ -103,10 +103,14 @@ function Story() {
               <section>
                 <h3><img alt="18" className="marker" src="../markers/18.png"/> St Cuthbert's Church</h3>
                 <p>At the top of the hill stands <span className="bold">St Cuthbert’s Church</span>. Take a moment to sit on the bench to the right of the gate in the churchyard. On a good day, you can see the towers of York Minster to the south and further off the less edifying sight of several power stations. Cuthbert is said to have founded a monastery in Crayke around 685. Our church, dating from 1436, could be on the site of the earlier monastic church where Cuthbert’s remains were kept for four months in the face of Viking attacks on Lindisfarne and the north coast in 883. His body was said to be intact 200 years after his death in 687. If you enjoyed the view south then you might want to take a quick detour down Love Lane, the entrance to which is via a couple of steps out of the churchyard to the east. As you head down the lane you will pass a wild garden on your left. This was the site of the burial pit mentioned in the introduction. Just through the gate at the end of the lane you can sit and enjoy the view towards the White Horse of Kilburn, near Sutton Bank.</p>
+                <a href="https://craykehistory.files.wordpress.com/2019/11/crayke-4-copy-3.jpg" target="_blank" rel="noopener noreferrer" ><img src="https://craykehistory.files.wordpress.com/2019/11/crayke-4-copy-3.jpg" className="story-image" /></a>
+                <p className="image-caption">Click image to view full size (opens in new tab)</p>
               </section>
               <section>
                 <h3><img alt="19" className="marker" src="../markers/19.png"/> Crayke Castle</h3>
                 <p>Leave the churchyard by the side steps on your left and walk up to the gates of <span className="bold">Crayke Castle</span>. First built in the twelfth century, probably in timber, it is said to have played host to five Plantagenet kings. The large imposing building, ‘The Great Chamber’ dates from the mid fifteenth century. Ruins of another late fifteenth century construction can still be seen. Possibly having been besieged in the Civil War, the castle was slighted and fell into ruin, but was restored soon after. The Great Chamber had electric lights installed in 1887. Such was the excitement in the village, that the village children were invited up to see them.</p>
+                <a href="https://craykehistory.files.wordpress.com/2019/11/img742-copy.jpg" target="_blank" rel="noopener noreferrer" ><img src="https://craykehistory.files.wordpress.com/2019/11/img742-copy.jpg" className="story-image" /></a>
+                <p className="image-caption">Click image to view full size (opens in new tab)</p>
               </section>
               <hr className="divider" />
               <section>
