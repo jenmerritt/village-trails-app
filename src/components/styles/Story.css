@@ -92,10 +92,11 @@ section{
     cursor: pointer;
 }
 
-.story-image{
-    max-width: 300px;
+.location-thumb{
+    max-height: 120px;
+    margin-right:5px;
 }
 
-.image-caption{
+.caption{
     font-size: 10px;
 }

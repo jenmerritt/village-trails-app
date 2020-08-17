@@ -11,7 +11,7 @@ function NavBar() {
             <img src="../header-image.png" id="header-image" alt="village-icon" />
         </div>
         <div className="nav-bar-right">
-            <p><a href="http://www.craykehistory.uk" target="_blank" rel="noopener noreferrer">Crayke History Website</a></p>
+            <p><a className="nav-link" href="http://www.craykehistory.uk" target="_blank" rel="noopener noreferrer">Crayke History Website</a></p>
         </div>
       </div>
     );

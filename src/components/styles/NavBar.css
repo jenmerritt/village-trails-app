@@ -8,6 +8,10 @@
     padding: 2px 0px 2px 0px;
 }
 
+.nav-link{
+    color: #ffffff !important;
+}
+
 a{
     color: #ffffff !important;
 }

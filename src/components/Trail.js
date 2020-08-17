@@ -8,7 +8,7 @@ import './styles/Trail.css';
 function Trail() {
 
     const [showStory, setShowStory] = useState(true);
-    const [reloadMap, setReloadMap] = useState(false);
+    const [reloadMap] = useState(false);
     const [displayHelp, setDisplayHelp] = useState(false);
 
     return (
