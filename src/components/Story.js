@@ -37,7 +37,8 @@ function Story() {
               <section>
                 <h3><img alt="1" className="marker" src="../markers/1.png"/> The Old Rectory</h3>
                 <p>Start the trail at the top of the hill. Go past the church and on your left, as the road bends to the south is <span className="bold">The Old Rectory</span>, much altered in 1803-5 by Rector Robert Gray, who began the addition of a third storey which had to be demolished in 1839, after high winds showed it had made the building very unstable.</p>
-                <img src="" alt="" />
+                <a href="https://craykehistory.files.wordpress.com/2020/08/old-rectory-e1598713801882.jpeg" target="_blank" rel="noopener noreferrer"><img className="location-thumb" src="https://craykehistory.files.wordpress.com/2020/08/old-rectory-e1598713801882.jpeg" alt="old rectory" /></a>
+                <p className="caption">Click image to view full size<br/>(opens in new tab)</p>
               </section>
               <section>
                 <h3><img alt="2" className="marker" src="../markers/2.png"/> Church Farm</h3>
@@ -48,7 +49,7 @@ function Story() {
               <section>
                 <h3><img alt="3" className="marker" src="../markers/3.png"/> Crayke Cottage</h3>
                 <p>Further down stands the modestly named <span className="bold">Crayke Cottage</span>, thought to have been built in 1852 as the curate’s house, it was the birthplace of William Ralph Inge, who was Dean of St Paul’s Cathedral in London from 1911-34.</p>
-                <a href="https://craykehistory.files.wordpress.com/2020/08/crayke-cottage-e1597690185884.jpg" target="_blank" rel="noopener noreferrer"><img className="location-thumb" src="https://craykehistory.files.wordpress.com/2020/08/crayke-cottage-e1597690185884.jpg" alt=" crayke cottage" /></a>
+                <a href="https://craykehistory.files.wordpress.com/2020/08/crayke-cottage-e1597690185884.jpg" target="_blank" rel="noopener noreferrer"><img className="location-thumb" src="https://craykehistory.files.wordpress.com/2020/08/crayke-cottage-e1597690185884.jpg" alt="crayke cottage" /></a>
                 <p className="caption">Click image to view full size<br/>(opens in new tab)</p>
               </section>
               <section>
