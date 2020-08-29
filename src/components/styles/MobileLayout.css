@@ -9,8 +9,10 @@
     .mobile-wrapper{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        margin: 20px 0 20px 0;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
         padding: 0;
     }
 
@@ -23,16 +25,16 @@
     }
 
     .text-content{
-        margin: 20px;
+        margin: 10px;
     }
 
     .map-wrapper{
         width: 90%;
         flex-grow: 1;
         margin: 0 auto;
-        padding: 0;
+        padding: 0px;
         border: 1px solid #6B9080;
-        height: 600px;
+        height: 550px;
     }
 
     .story-map-wrapper{
@@ -48,7 +50,7 @@
         margin: 10px;
         border: 1px solid grey;
         border-radius: 15px;
-        /* padding: 10px 0px 10px 0px; */
+        padding: 10px 0px 10px 0px;
         text-align: center;
         background-color: #6B9080;
     }
