@@ -20,7 +20,7 @@ function Story() {
                 </div>
                   <section>
                     <p>Crayke (the name possibly comes from the Saxon word ‘Creca’, meaning crag or rock) has a long history, with archaeological evidence showing occupation since Neolithic times. It seems to have been a key staging point on an ancient trackway going north – south. </p>
-                    <p>There is strong evidence of a Saxon settlement, possibly a monastery, on the hill. Indeed records show that in 685 Crayke and the land three miles around it was given to Cuthbert, Bishop of Lindisfarne, as a resting place on journeys to York. Thus started Crayke’s long association with Durham. Local finds include a polished stone axe head, dated to 3000BC, Roman pottery – possibly associated with Crayke’s use as an inland signal station built as part of the Saxon Shore defences in the 4th century, a 7th century pendant, a fragment of a 9th century stone cross and a curious hastily constructed burial pit containing one female and fifteen male skeletons. Are they monks, plague victims or maybe victims of William the Conqueror’s Harrying of the North?</p> 
+                    <p>There is strong evidence of a Saxon settlement, possibly a monastery, on the hill. Indeed records show that in 685 Crayke and the land three miles around it was given to Cuthbert, Bishop of Lindisfarne, as a resting place on journeys to York. Thus started Crayke’s long association with Durham. Local finds include a polished stone axe head, dated to 3000BC, Roman pottery (possibly associated with Crayke’s use as an inland signal station built as part of the Roman  defences in the 4th century), a 7th century pendant, a fragment of a 9th century stone cross and a curious hastily constructed burial pit containing one female and fifteen male skeletons. Are they Saxon monks, plague victims or maybe victims of William the Conqueror’s Harrying of the North?</p> 
                     <p>The Domesday Book (1086) shows Crayke’s value had halved since the time of Edward the Confessor, almost certainly the result of William’s actions.</p>
                     <p>For more information on Crayke History visit our website: <a href="http://www.craykehistory.uk" target="_blank" rel="noopener noreferrer">www.craykehistory.uk</a></p>
                   </section>
@@ -47,7 +47,7 @@ function Story() {
               </section>
               <section>
                 <h3><img alt="3" className="marker" src="../markers/3.png"/> Crayke Cottage</h3>
-                <p>Further down stands the modestly named <span className="bold">Crayke Cottage</span>, thought to have been built in 1852 as the curate’s house and the birthplace of William Ralph Inge, who was Dean of St Paul’s Cathedral in London from 1911-34.</p>
+                <p>Further down stands the modestly named <span className="bold">Crayke Cottage</span>, thought to have been built in 1852 as the curate’s house, it was the birthplace of William Ralph Inge, who was Dean of St Paul’s Cathedral in London from 1911-34.</p>
                 <a href="https://craykehistory.files.wordpress.com/2020/08/crayke-cottage-e1597690185884.jpg" target="_blank" rel="noopener noreferrer"><img className="location-thumb" src="https://craykehistory.files.wordpress.com/2020/08/crayke-cottage-e1597690185884.jpg" alt=" crayke cottage" /></a>
                 <p className="caption">Click image to view full size<br/>(opens in new tab)</p>
               </section>
@@ -59,7 +59,7 @@ function Story() {
               </section>
               <section>
                 <h3><img alt="5" className="marker" src="../markers/5.png"/> The Pinfold</h3>
-                <p>Head further down the hill and cross Easingwold road. Behind the hedge on the small green in front of you at the corner you will find <span className="bold">The Pinfold</span>, where straying farm animals were kept after being rounded up. This was not the first pinfold in the village. It was built in 1852, after the Reverend Churton became exasperated by the noise the animals made when held in the original one beside the church. Farmers had to pay a fine to both the person whose land they had strayed on to, and to the pound keeper before the animals were released.</p>
+                <p>Head further down the hill and cross the Easingwold road. Behind the hedge on the small green in front of you at the corner you will find <span className="bold">The Pinfold</span>, where straying farm animals were kept after being rounded up. This was not the first pinfold in the village. It was built in 1852, after the Reverend Churton became exasperated by the noise the animals made when held in the original one beside the church. Farmers had to pay a fine to both the person whose land they had strayed on to, and to the pound keeper before the animals were released.</p>
                 <a href="https://craykehistory.files.wordpress.com/2020/08/pinfold-e1597690177599.jpeg" target="_blank" rel="noopener noreferrer"><img className="location-thumb" src="https://craykehistory.files.wordpress.com/2020/08/pinfold-e1597690177599.jpeg" alt="the pinfold" /></a>
                 <p className="caption">Click image to view full size<br/>(opens in new tab)</p>
               </section>
@@ -120,7 +120,7 @@ function Story() {
               </section>
               <section>
                 <h3><img alt="16" className="marker" src="../markers/16.png"/> Wellesley Cottage</h3>
-                <p>Next is <span className="bold">Wellesley Cottage</span> with its unusual Flemish style brick work, with alternate headers and stretchers, previously one of Crayke’s pubs, latterly ‘The Rose and Crown’ (or just “Crown’) but once called ‘The Greyhound’.</p>
+                <p>Next is <span className="bold">Wellesley Cottage</span> with its unusual Flemish style brick work, with alternate headers and stretchers, previously one of Crayke’s pubs, latterly ‘The Rose and Crown’ (or just 'Crown’) but once called ‘The Greyhound’.</p>
                 <a href="https://craykehistory.files.wordpress.com/2020/08/wellesley-cottage-2-e1597690095538.jpg" target="_blank" rel="noopener noreferrer"><img className="location-thumb" src="https://craykehistory.files.wordpress.com/2020/08/wellesley-cottage-2-e1597690095538.jpg" alt="wellesley cottage" /></a>
                 <p className="caption">Click image to view full size<br/>(opens in new tab)</p>
               </section>
