@@ -9,11 +9,17 @@ function Map({reloadMap}) {
 
     useEffect(
       () => {
-        loadModules(['esri/Map', 'esri/views/MapView', 'esri/widgets/BasemapToggle', 'esri/layers/GraphicsLayer', 'esri/Graphic', 'esri/layers/FeatureLayer'], { css: true })
-        .then(([ArcGISMap, MapView, BasemapToggle, GraphicsLayer, Graphic, FeatureLayer]) => {
+        loadModules(['esri/Map', 'esri/WebMap', 'esri/views/MapView', 'esri/widgets/BasemapToggle', 'esri/layers/GraphicsLayer', 'esri/Graphic', 'esri/layers/FeatureLayer'], { css: true })
+        .then(([ArcGISMap, WebMap, MapView, BasemapToggle, GraphicsLayer, Graphic, FeatureLayer]) => {
 
-          const map = new ArcGISMap({
-            basemap: 'osm'
+          // const map = new ArcGISMap({
+          //   basemap: 'osm'
+          // });
+
+          var map = new WebMap({
+            portalItem: {
+              id: "dad90383f4c34a42a8b1c70db54b1472"
+            }
           });
 
           const view = new MapView({
@@ -61,18 +67,18 @@ function Map({reloadMap}) {
             }
           });
               
-          var pointsOfInterest = new FeatureLayer({
-            url: "https://services.arcgis.com/bMgojlbrTl9MfMgx/arcgis/rest/services/crayke_history_trail/FeatureServer",
-            outFields: ["OBJECTID", "TITLE", "CONTENT", "NUMBER", "IMAGE"],
-            popupTemplate: {
-              title: "{NUMBER} : {TITLE}",
-              content: `{CONTENT} <p></p><a href="{IMAGE}" target="_blank" rel="noopener noreferrer" ><img src="{IMAGE}" /></a><p>Click image to view full size (opens in new tab)</p>`,
-              overwriteActions: true,
-              actions: [zoomInAction, zoomOutAction]
-            }
-          });
+          // var pointsOfInterest = new FeatureLayer({
+          //   url: "https://services.arcgis.com/bMgojlbrTl9MfMgx/arcgis/rest/services/crayke_history_trail/FeatureServer",
+          //   outFields: ["OBJECTID", "TITLE", "CONTENT", "NUMBER", "IMAGE"],
+          //   popupTemplate: {
+          //     title: "{NUMBER} : {TITLE}",
+          //     content: `{CONTENT} <p></p><a href="{IMAGE}" target="_blank" rel="noopener noreferrer" ><img src="{IMAGE}" /></a><p>Click image to view full size (opens in new tab)</p>`,
+          //     overwriteActions: true,
+          //     actions: [zoomInAction, zoomOutAction]
+          //   }
+          // });
     
-          map.add(pointsOfInterest);  
+          // map.add(pointsOfInterest);  
           
            return () => {
             if (view) {
