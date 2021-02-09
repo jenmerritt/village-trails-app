@@ -26,7 +26,7 @@ function Map({reloadMap}) {
             container: mapRef.current,
             map: map,
             center: [-1.142849, 54.127653],
-            zoom: 17
+            zoom: 16
           });
 
           const basemapToggle = new BasemapToggle({
